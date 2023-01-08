@@ -1,5 +1,5 @@
 body{
-    text-align: center;
+   /*text-align: center;*/
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url(./img/fondo-galaxia.jpg);
     background-repeat: no-repeat;
@@ -12,6 +12,7 @@ h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     color: white;
+    text-align: center;
 }
 
 form {
@@ -41,6 +42,15 @@ input {
     width: 17em;
 }
 
+#inputClase, #inputTutor{
+    margin-right:20px;
+    margin-top: 1em;
+    margin-bottom: 1em;;
+    border: solid 1px aqua;
+    padding: 7px;
+    border-radius: 10px;
+    width: 17em; 
+}
 #agregar, #cargarLista, #guardarLista{
     background-color: rgb(15, 95, 95);
     font-size: medium;
@@ -51,6 +61,8 @@ input {
     border-radius: 5px;
     padding: 8px;
     width: 10vw;
+    text-align: center;
+    margin-left: 15.75rem;
 }
 
 table {
@@ -77,14 +89,52 @@ img {
     width: 10rem;
     display: flex;
 }
+
+#conteiner-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background-color: #066285;
+  color: white;
+  padding-bottom: 2em;
+  float: left;
+  background-image: url(./img/fondo-galaxia.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+#enlaces{
+  margin-top: 1.5em;
+  text-align: left;
+  }
+
+#enlaces li{
+  list-style: none;
+
+  }
+
+#enlaces a{
+  text-decoration: none;
+  color: white;
+  }
+
+
+#logo-footer img{
+  width: 8rem;
+  float: left;
+  }
+  
+
 @media (max-width: 900px) {
     table{
         width: 31.25rem;
         text-align:center;
     }
-    #agregar{
+    #agregar, #cargarLista, #guardarLista{
         width: 15vw;
         font-size: x-small;
         text-align:center;
     }
+    
 }
